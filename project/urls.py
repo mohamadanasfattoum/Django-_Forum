@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from question import question_list ,question_detail
+from question.views import question_list ,question_detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
