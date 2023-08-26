@@ -20,4 +20,4 @@ class Answer(models.Model):
 
 
     def __str__(self) -> str:
-        return self.title
+        return str(self.question)
