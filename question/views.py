@@ -1,5 +1,5 @@
 from django.shortcuts import render , redirect
-from .models import Question
+from .models import Question , Answer
 from .forms import QuestionForm
 
 def question_list(request):
@@ -13,7 +13,8 @@ def question_list(request):
     
 def question_detail(request,question_id):
     data = Question.objects.get(id=question_id)
-    return render(request,'question_detail.html',{'question':data})
+    answer_data = Answer.objects.all()
+    return render(request,'question_detail.html',{'question':data,'answer':answer_data})
 
 
 def add_question(request):

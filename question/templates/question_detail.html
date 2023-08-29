@@ -6,3 +6,15 @@
 <hr>
 <p>{{question.content}}</p>
 
+
+
+<ul>
+    {% for answer in answer %}
+
+        {{answer}}
+        <p>
+            {{answer.answer}}
+        </p>
+
+    {% endfor %}
+</ul>
