@@ -1,1 +1,13 @@
-<h2>{{question}}</h2>
+<h2>Edit Question</h2>
+
+<a href="/blog/">To All Questions</a>
+
+<hr>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {{form}}
+    <input type="submit" value="Edit Question">
+
+</form>
