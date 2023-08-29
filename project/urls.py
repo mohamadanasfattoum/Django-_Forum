@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from question.views import question_list ,question_detail, add_question, edit_question
+from question.views import question_list ,question_detail, add_question, edit_question, delete_question
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,6 +26,7 @@ urlpatterns = [
     path('question/add/', add_question),
     path('question/<int:question_id>', question_detail),
     path('question/<int:question_id>/edit/', edit_question),
+    path('question/<int:question_id>/delet/', delete_question),
 ]
 
 
