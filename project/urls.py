@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('question/', question_list),
     path('question/add/', add_question),
-    path('question/<int:question_id>', question_detail),
+    path('question/<int:question_id>/', question_detail),
     path('question/<int:question_id>/edit/', edit_question),
     path('question/<int:question_id>/delet/', delete_question),
 ]
