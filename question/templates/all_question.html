@@ -2,10 +2,12 @@
     Questions
 </h1>
 
+<a href="/question/add/">Add New Post</a>
+<hr>
 <ul>
     {% for question in question %}
 
-        <li>{{question}}</li>
+    <li><a href="/blog/{{question.id}}/">{{question}}</a></li>
 
     {% endfor %}
 </ul>
