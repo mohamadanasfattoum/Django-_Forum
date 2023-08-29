@@ -26,4 +26,4 @@ def add_question(request):
     else:
         form = QuestionForm()
 
-    return render(request,'add.html',{'form':form})
+    return render(request,'add_question.html',{'form':form})
