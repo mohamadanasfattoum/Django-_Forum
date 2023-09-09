@@ -27,4 +27,4 @@ class QuestionUpdate(generic.UpdateView):
 
 
 class QuestionDelete(generic.DeleteView):
-    pass
+    model = Question
