@@ -23,3 +23,4 @@ class QuestionUpdate(generic.UpdateView):
     model = Question
     fields='__all__'
     success_url= '/question/'
+    template_name= 'question/edit_question.html'
