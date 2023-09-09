@@ -28,3 +28,4 @@ class QuestionUpdate(generic.UpdateView):
 
 class QuestionDelete(generic.DeleteView):
     model = Question
+    fields='__all__'
