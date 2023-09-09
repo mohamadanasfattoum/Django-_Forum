@@ -22,3 +22,4 @@ class QuestionCreate(generic.CreateView):
 class QuestionUpdate(generic.UpdateView):
     model = Question
     fields='__all__'
+    success_url= '/question/'
