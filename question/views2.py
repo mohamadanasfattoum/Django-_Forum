@@ -29,3 +29,5 @@ class QuestionUpdate(generic.UpdateView):
 class QuestionDelete(generic.DeleteView):
     model = Question
     fields='__all__'
+    success_url= '/question/'
+
