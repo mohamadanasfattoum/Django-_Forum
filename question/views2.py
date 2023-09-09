@@ -13,4 +13,4 @@ class QuestionDetail(generic.DetailView):
 
 
 class QuestionCreate(generic.CreateView):
-    pass
+    model = Question
