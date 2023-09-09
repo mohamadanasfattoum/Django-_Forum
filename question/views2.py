@@ -9,3 +9,8 @@ class Questionlist(generic.ListView):
 
 class QuestionDetail(generic.DetailView):
     model = Question
+
+
+
+class QuestionCreate(generic.CreateView):
+    pass
