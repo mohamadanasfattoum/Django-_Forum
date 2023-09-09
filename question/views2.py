@@ -8,4 +8,4 @@ class Questionlist(generic.ListView):
 
 
 class QuestionDetail(generic.DetailView):
-    pass
+    model = Question
