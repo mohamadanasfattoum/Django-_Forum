@@ -21,3 +21,4 @@ class QuestionCreate(generic.CreateView):
 
 class QuestionUpdate(generic.UpdateView):
     model = Question
+    fields='__all__'
