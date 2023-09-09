@@ -14,3 +14,5 @@ class QuestionDetail(generic.DetailView):
 
 class QuestionCreate(generic.CreateView):
     model = Question
+    fields='__all__'
+    
