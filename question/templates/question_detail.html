@@ -4,16 +4,16 @@
 <a href="/question/{{question.id}}/edit/">Edit Question</a>
 <a href="/question/{{question.id}}/delete/">Delete Question</a>
 <hr>
-<p>{{question.content}}</p>
+<h1>{{question.content}}</h1>
 
 
 
 <ul>
     {% for answer in answer %}
-
-        {{answer}}
+        <h2>Answer Title:</h2>
+        <h2>{{answer}}</h2>
         <h3>Created_at:</h3> <h4>{{answer.created_at}}</h4>
-        
+        <h5>Answer:</h5>
         <p>
             {{answer.answer}}
         </p>
