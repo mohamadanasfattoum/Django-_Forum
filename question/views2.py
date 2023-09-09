@@ -20,4 +20,4 @@ class QuestionCreate(generic.CreateView):
 
 
 class QuestionUpdate(generic.UpdateView):
-    pass
+    model = Question
