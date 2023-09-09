@@ -23,7 +23,7 @@ from question.views2 import Questionlist , QuestionDetail , QuestionCreate
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('question/', Questionlist.as_view()),
-    path('question/add/', QuestionCreate),
+    path('question/add/', QuestionCreate.as_view()),
     path('question/<int:pk>/', QuestionDetail.as_view()),
     path('question/<int:question_id>/edit/', edit_question),
     path('question/<int:question_id>/delete/', delete_question),
