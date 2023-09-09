@@ -19,14 +19,14 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from question.views import question_list ,question_detail, add_question, edit_question, delete_question
-from question.views2 import Questionlist , QuestionDetail , QuestionCreate , QuestionUpdate
+from question.views2 import Questionlist , QuestionDetail , QuestionCreate , QuestionUpdate , QuestionDelete
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('question/', Questionlist.as_view()),
     path('question/add/', QuestionCreate.as_view()),
     path('question/<int:pk>/', QuestionDetail.as_view()),
     path('question/<int:pk>/edit/', QuestionUpdate.as_view()),
-    path('question/<int:question_id>/delete/', delete_question),
+    path('question/<int:pk>/delete/', QuestionDelete.as_view()),
 ]
 
 
